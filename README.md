@@ -26,3 +26,8 @@ Async:
         console.log("test.json doesnt exist!");
       }
     });
+
+
+## License
+
+Copyright 2011, do whatever you want, just dont sue me. If you want a more elaborate answer, look at the FreeBSD / MIT styled licenses.
