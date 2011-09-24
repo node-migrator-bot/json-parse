@@ -1,12 +1,13 @@
 var json = require("../");
-json.async("./test.json", function (error, data)
+
+json.async("./test.json", function (error, parsed, stringed)
 {
 	if (!error)
 	{
-		console.log("found the file to work with!", JSON.stringify(data));
-		for (var index in data)
+		console.log("found the file to work with!", stringed);
+		for (var index in parsed)
 		{
-			var item = data[index];
+			var item = parsed[index];
 			switch (typeof(item))
 			{
 				case "string":
@@ -30,3 +31,4 @@ json.async("./test.json", function (error, data)
 		console.log("couldnt find a find to start with!");
 	}
 });
+

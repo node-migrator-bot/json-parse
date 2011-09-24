@@ -1,6 +1,8 @@
 ## About
 
-Simple module that parses a given JSON file. At the moment it only supports async, but I plan on expanding it to not only support async + sync for local JSON, but HTTP requests and maybe even streams (much like twitter's) for remote JSON :)
+Simple module that parses a given JSON file.
+
+At the moment this only supports reading from local JSON, but HTTP requests and maybe even streams (much like twitter's) for remote JSON are also planned :)
 
 
 ## Install
@@ -10,6 +12,29 @@ You can install this through npm:
     $ npm install json-parse
 
 
-## License
+## Usage
 
-Copyright 2011, do whatever you want, just dont sue me. If you want a more elaborate answer, look at the FreeBSD / MIT styled licenses.
+    //require the library
+    var json = require("json-parse");
+
+    //sync version
+    var sync = json.sync("./test.json");
+    console.log(sync.some_var);
+    console.log(JSON.stringify(sync));
+
+    //async version
+    json.async("./test.json", function (error, parsed, stringified)
+    {
+      console.log(parsed.some_var);
+      console.log(stringified);
+    });
+
+## License (MIT)
+
+Copyright (c) 2011 muted87
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the 'Software'), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.

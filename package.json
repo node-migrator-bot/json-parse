@@ -1,23 +1,23 @@
 {
 	"name": "json-parse",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"description": "Simple module that parses a given JSON file",
-	"keywords": ["json", "config"],
+	"keywords": ["json", "config", "parse", "parser", "flatfile"],
 	"author": "muted87",
-	"main": "./index.js",
+	"main": "index",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/muted87/json-parse.git"
 	},
-	"dependencies": {},
 	"engines": {
 		"node": "*"
 	},
 	"directories": {
-		"lib": "./lib"
+		"lib": "./lib",
+		"test": "./test"
 	},
-	"files": [
-		""
-	],
+	"dependencies": {
+		"async-json": ""
+	},
 	"devDependencies": {}
 }
