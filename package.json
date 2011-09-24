@@ -1,7 +1,7 @@
 {
 	"name": "json-parse",
-	"version": "0.0.1",
-	"description": "Load a JSON file",
+	"version": "0.0.2",
+	"description": "Simple module that parses a given JSON file",
 	"keywords": ["json", "config"],
 	"author": "muted87",
 	"main": "./index.js",

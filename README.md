@@ -1,6 +1,6 @@
 ## About
 
-Simple module that parses a given JSON file. At the moment it only supports async, but I plan on expanding it to not only support sync, but HTTP requests that return JSON :)
+Simple module that parses a given JSON file. At the moment it only supports async, but I plan on expanding it to not only support async + sync for local JSON, but HTTP requests and maybe even streams (much like twitter's) for remote JSON :)
 
 
 ## Install
