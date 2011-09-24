@@ -1,0 +1,23 @@
+{
+	"name": "json-parse",
+	"version": "0.0.1",
+	"description": "Load a JSON file",
+	"keywords": ["json", "config"],
+	"author": "muted87",
+	"main": "./index.js",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/muted87/json-parse.git"
+	},
+	"dependencies": {},
+	"engines": {
+		"node": "*"
+	},
+	"directories": {
+		"lib": "./lib"
+	},
+	"files": [
+		""
+	],
+	"devDependencies": {}
+}
