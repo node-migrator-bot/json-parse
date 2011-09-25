@@ -29,6 +29,13 @@ You can install this through npm:
       console.log(stringified);
     });
 
+    //http version
+    json.http("http://some.example.site.com/test.json", function (error, parsed, stringified)
+    {
+      console.log(parsed.some_var);
+      console.log(stringified);
+    });
+
 
 ## TODO
 
