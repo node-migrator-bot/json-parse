@@ -30,7 +30,7 @@ You can install this through npm:
     });
 
     //http version
-    json.http("http://some.example.site.com/test.json", function (error, parsed, stringified)
+    json.http("http://some.example.site.com/test.json", null, function (error, parsed, stringified)
     {
       console.log(parsed.some_var);
       console.log(stringified);
