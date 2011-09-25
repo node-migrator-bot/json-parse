@@ -39,7 +39,7 @@ You can install this through npm:
 
 ## TODO
 
-    1) HTTP request / remove JSON method started with basic GET support, please fork and hack in some POST, etc support!
+    1) HTTP request / remote JSON method started with basic GET support, please fork and hack in some POST, etc support!
     2) Streaming / Long polling / "COMET" styled HTTP requests will come after (at minimum) POST is supported (see above entry)
 
 
