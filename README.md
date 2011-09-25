@@ -18,7 +18,6 @@ You can install this through npm:
     //sync version
     var sync = json.sync("./test.json");
     console.log(sync.some_var);
-    console.log(JSON.stringify(sync));
 
     //async version
     json.async("./test.json", function (error, parsed)
