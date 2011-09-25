@@ -2,8 +2,6 @@
 
 Simple module that parses a given JSON file.
 
-At the moment this only supports reading from local JSON, but HTTP requests and maybe even streams (much like twitter's) for remote JSON are also planned :)
-
 
 ## Install
 
@@ -12,7 +10,7 @@ You can install this through npm:
     $ npm install json-parse
 
 
-## Usage
+## Usage & Functions demo (see test/ for more detailed running demos)
 
     //require the library
     var json = require("json-parse");
@@ -23,17 +21,15 @@ You can install this through npm:
     console.log(JSON.stringify(sync));
 
     //async version
-    json.async("./test.json", function (error, parsed, stringified)
+    json.async("./test.json", function (error, parsed)
     {
       console.log(parsed.some_var);
-      console.log(stringified);
     });
 
     //http version
-    json.http("http://some.example.site.com/test.json", null, function (error, parsed, stringified)
+    json.http("http://some.example.site.com/test.json", function (error, parsed)
     {
       console.log(parsed.some_var);
-      console.log(stringified);
     });
 
 

@@ -12,6 +12,9 @@
 	"engines": {
 		"node": "*"
 	},
+	"scripts": {
+		"test": "node test/async.js; node test/sync.js; node test/server.js & node test/http.js"
+	},
 	"directories": {
 		"lib": "./lib",
 		"test": "./test"

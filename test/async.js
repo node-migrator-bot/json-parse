@@ -1,10 +1,10 @@
 var json = require("../");
 
-json.async("./test.json", function (error, parsed, stringed)
+json.async("./test/test.json", function (error, parsed, stringed)
 {
 	if (!error)
 	{
-		console.log("found the file to work with!", stringed);
+		console.log("async: found the file to work with!", stringed);
 		for (var index in parsed)
 		{
 			var item = parsed[index];
