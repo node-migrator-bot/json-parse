@@ -1,6 +1,6 @@
 {
 	"name": "json-parse",
-	"version": "0.0.3",
+	"version": "0.0.4",
 	"description": "Simple module that parses a given JSON file",
 	"keywords": ["json", "config", "parse", "parser", "flatfile"],
 	"author": "muted87",
